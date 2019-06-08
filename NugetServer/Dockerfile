@@ -3,6 +3,7 @@ WORKDIR /app
 
 COPY *.csproj ./
 RUN dotnet restore NugetServer.csproj
+RUN dotnet build NugetServer.csproj
 
 COPY . ./
 RUN dotnet publish NugetServer.csproj -c Release -o out
