@@ -9,5 +9,5 @@ services:
       dockerfile: "Dockerfile"
     ports:
       - "5000:80"
-#    volumes:
-#      - //d/projetos/Services/NugetApi/NugetServer/wwwroot/packages:/app/wwwroot/packages/
+    volumes:
+      - /home/ubuntu/Documentos:/app/wwwroot/packages/
