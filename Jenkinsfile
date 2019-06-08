@@ -10,7 +10,8 @@ pipeline {
         }
         stage('Docker compose') {
             steps {
-                sh 'pwd'
+                sh 'cd NugetServer/'
+                sh 'docker-compose up -d'
             }
         }
     }
