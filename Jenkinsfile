@@ -11,7 +11,7 @@ pipeline {
         stage('Docker compose') {
             steps {
                 sh 'cd NugetServer/'
-                sh 'docker-compose up -d'
+                sh 'ls'
             }
         }
     }
