@@ -3,7 +3,7 @@ pipeline {
     stages {        
         stage('Docker compose') {
             steps {
-                sh 'cd NugetServer; docker-compose up -d'
+                sh 'whoiam; cd NugetServer; docker-compose up -d'
             }
         }
     }
