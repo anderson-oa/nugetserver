@@ -8,11 +8,9 @@ pipeline {
                 sh 'dotnet build'
             }
         }
-        stage('Test') {
+        stage('Docker compose') {
             steps {
-                echo 'Testing...'
-                echo 'Funfo 1...'
-                echo 'Funfo 2...'
+                sh docker-compose up -d
             }
         }
     }
