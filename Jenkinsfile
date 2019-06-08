@@ -10,8 +10,7 @@ pipeline {
         }
         stage('Docker compose') {
             steps {
-                sh 'cd NugetServer/'
-                sh 'ls'
+                sh 'cd NugetServer/ ls'
             }
         }
     }
