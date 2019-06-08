@@ -1,16 +1,9 @@
 pipeline {
     agent any
-    stages {
-        stage('Build') {
-            steps {
-                sh 'dotnet clean'
-                sh 'dotnet restore'
-                sh 'dotnet build'
-            }
-        }
+    stages {        
         stage('Docker compose') {
             steps {
-                sh 'cd NugetServer/ ls'
+                sh 'cd NugetServer; docker-compose up -d'
             }
         }
     }
