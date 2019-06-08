@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Docker compose') {
             steps {
-                sh 'cd ../'
+                sh 'pwd'
             }
         }
     }
